@@ -1,0 +1,20 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+	"problemMatcher": [],
+  "options": {
+		"env": {
+			"MY_VARIABLE_1": "It's time",
+			"MY_VARIABLE_2": "to having",
+			"MY_VARIABLE_3": "lunch"
+		}
+	},
+  "tasks": [
+    {
+      "label": "printenv",
+      "type": "shell",
+      "command": "printenv | grep MY_VARIABLE"
+    }
+  ]
+}
